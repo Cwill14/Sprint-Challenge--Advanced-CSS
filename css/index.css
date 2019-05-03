@@ -224,7 +224,7 @@ footer {
   border-radius: 0.5rem;
   width: 100%;
   animation-name: fadein;
-  animation-duration: 0.5s;
+  animation-duration: 1.25s;
 }
 .home .intro h2 {
   padding: 15px;
@@ -245,15 +245,15 @@ footer {
 }
 .home .space-images img .blast {
   animation-name: fadein;
-  animation-duration: 0.75s;
+  animation-duration: 1.25s;
 }
 .home .space-images img .sky {
   animation-name: fadein;
-  animation-duration: 1s;
+  animation-duration: 1.5s;
 }
 .home .space-images img .launch {
   animation-name: fadein;
-  animation-duration: 1.25s;
+  animation-duration: 1.75s;
 }
 @media (max-width: 500px) {
   .home .space-images .blast {
@@ -298,6 +298,7 @@ footer {
   text-align: center;
   width: 10rem;
   padding: 1.25rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem #454A59;
 }
 .home .walk .walk-text .btn:hover {
   background-color: white;
