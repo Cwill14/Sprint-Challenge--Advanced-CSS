@@ -182,7 +182,7 @@ p {
   text-decoration: none;
   color: #454A59;
   font-size: 2rem;
-  margin: 0 1.25rem;
+  margin: 0 1.3rem;
 }
 footer {
   color: #22283B;
@@ -238,6 +238,22 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  background-color: #22283A;
+  color: white;
+  border: 1px solid white;
+  border-radius: 0.75rem;
+  font-size: 2rem;
+  text-align: center;
+  width: 32.5%;
+  padding: 1.25rem;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: #22283A;
+  border-color: #22283A;
+  cursor: pointer;
 }
 .home .walk .walk-img {
   width: 46%;
