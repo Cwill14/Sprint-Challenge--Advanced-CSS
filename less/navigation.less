@@ -1,1 +1,46 @@
 // Navigation code here
+#nav-container {
+    position: fixed;
+    z-index: 2;
+
+    // max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    .flex();
+    flex-flow: column nowrap;
+    align-items: center;
+    // border: 1px dashed red;
+    padding: 1rem;
+    color: @nav-font;
+    background-color: @nav-bg;
+    opacity: 1;
+    // How I originally styled opacity before JS
+    // opacity: .75;
+    // &:hover {
+    //     opacity: 1;
+    // }
+    h1 {
+        font-size: 4rem;
+        margin: 1rem 0;
+    }
+    nav {
+        .flex();
+        flex-flow: row nowrap;
+        a {
+            text-decoration: none;
+            color: @nav-font;
+            font-size: 1.75rem;
+            margin: 0 1.3rem;
+            &:hover {
+                transform: scale(1.15);
+                color: @waterloo;
+            }
+            // &:active {
+            //     color: @ebony-clay;
+            // }
+            @media @phone {
+                margin: 0 1rem;
+            }
+        }
+    }
+}
