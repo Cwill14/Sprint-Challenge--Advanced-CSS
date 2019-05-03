@@ -6,7 +6,7 @@
 }
 .home {
   position: relative;
-  top: 97.5px;
+  top: 96.8px;
   z-index: 1;
   .intro {
     img {
@@ -28,7 +28,7 @@
     .flex();
     flex-wrap: wrap;
     width: 100%;
-
+  
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -36,9 +36,6 @@
       height: 100%;
       .blast {
         .fade-animation(.75s);
-        @media @phone{
-          width: 100%;
-        }
       }
       .sky {
         .fade-animation(1s);
@@ -48,6 +45,9 @@
       }
     }
     @media @phone {
+      .blast {
+        width: 100%;
+      }
       .sky, .launch {
         display: none;
       }
@@ -79,7 +79,6 @@
       h3 {
         margin-bottom: 10px;
       }
-
       p {
         margin-bottom: 26px;
       }
@@ -130,4 +129,4 @@
     }
   }
 
-}// home
+} //home
