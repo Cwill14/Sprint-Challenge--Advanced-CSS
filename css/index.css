@@ -137,6 +137,9 @@ body {
   font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
 }
+body {
+  margin: 0 1rem;
+}
 h1,
 h2,
 h3,
@@ -209,11 +212,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-@media (max-width: 500px) {
-  body {
-    margin: 0 1rem;
-  }
 }
 .home {
   position: relative;
@@ -305,6 +303,7 @@ footer {
   color: #22283A;
   border-color: #22283A;
   cursor: pointer;
+  transform: scale(1.1);
 }
 .home .walk .walk-img {
   width: 46%;
@@ -330,6 +329,9 @@ footer {
   }
   .home .walk .walk-text .btn {
     width: 100%;
+  }
+  .home .walk .walk-text .btn:hover {
+    transform: scale(1.05);
   }
   .home .walk .walk-img {
     width: 100%;

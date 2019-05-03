@@ -1,9 +1,5 @@
 // Home Content
-@media @phone {
-  body {
-    margin: 0 1rem;
-  }
-}
+
 .home {
   position: relative;
   top: 96.8px;
@@ -34,15 +30,15 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-    .blast {
-      .fade-animation(1.25s);
-    }
-    .sky {
-      .fade-animation(1.5s);
-    }
-    .launch {
-      .fade-animation(1.75s);
-    }
+      .blast {
+        .fade-animation(1.25s);
+      }
+      .sky {
+        .fade-animation(1.5s);
+      }
+      .launch {
+        .fade-animation(1.75s);
+      }
     }
     @media @phone {
       .blast {
@@ -109,6 +105,9 @@
         width: 100%;
         .btn {
           width: 100%;
+          &:hover {
+            transform: scale(1.05);
+          }
         }
       }
       .walk-img {
