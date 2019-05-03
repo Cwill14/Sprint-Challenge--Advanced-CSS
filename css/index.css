@@ -162,7 +162,8 @@ p {
   margin: 0 auto;
 }
 .nav-container {
-  max-width: 960px;
+  position: fixed;
+  z-index: 2;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -186,12 +187,18 @@ p {
   font-size: 1.75rem;
   margin: 0 1.3rem;
 }
+.nav-container nav a:hover {
+  transform: scale(1.15);
+  color: #81848E;
+}
 @media (max-width: 500px) {
   .nav-container nav a {
     margin: 0 1rem;
   }
 }
 footer {
+  position: relative;
+  top: 86.8px;
   color: #22283B;
   background: #f4f4f4;
   padding: 20px 0;
@@ -206,9 +213,16 @@ footer {
     margin: 0 1rem;
   }
 }
+.home {
+  position: relative;
+  top: 97.5px;
+  z-index: 1;
+}
 .home .intro img {
   border-radius: 0.5rem;
   width: 100%;
+  animation-name: fadein;
+  animation-duration: 0.5s;
 }
 .home .intro h2 {
   padding: 15px;
@@ -227,10 +241,24 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+.home .space-images img .blast {
+  animation-name: fadein;
+  animation-duration: 0.75s;
+}
 @media (max-width: 500px) {
-  .home .space-images .blast {
+  .home .space-images img .blast {
     width: 100%;
   }
+}
+.home .space-images img .sky {
+  animation-name: fadein;
+  animation-duration: 1s;
+}
+.home .space-images img .launch {
+  animation-name: fadein;
+  animation-duration: 1.25s;
+}
+@media (max-width: 500px) {
   .home .space-images .sky,
   .home .space-images .launch {
     display: none;
@@ -285,6 +313,8 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  animation-name: fadein;
+  animation-duration: 1.5s;
 }
 @media (max-width: 500px) {
   .home .walk {
@@ -303,5 +333,13 @@ footer {
   .home .walk .walk-img {
     width: 100%;
     margin: 0 0 8% 0;
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

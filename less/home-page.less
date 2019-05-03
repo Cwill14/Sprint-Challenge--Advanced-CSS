@@ -5,11 +5,14 @@
   }
 }
 .home {
-
+  position: relative;
+  top: 97.5px;
+  z-index: 1;
   .intro {
     img {
       border-radius: 0.5rem;
       width: 100%;
+      .fade-animation(0.5s);
     }
     h2 {
       padding: 15px;
@@ -31,11 +34,20 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      .blast {
+        .fade-animation(.75s);
+        @media @phone{
+          width: 100%;
+        }
+      }
+      .sky {
+        .fade-animation(1s);
+      }
+      .launch {
+        .fade-animation(1.25s);
+      }
     }
     @media @phone {
-      .blast {
-        width: 100%;
-      }
       .sky, .launch {
         display: none;
       }
@@ -85,6 +97,7 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+        .fade-animation(1.5s);
       }
     }
     @media @phone {
@@ -107,4 +120,14 @@
     
 
   } //walk
+
+  @keyframes fadein {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
 }// home
