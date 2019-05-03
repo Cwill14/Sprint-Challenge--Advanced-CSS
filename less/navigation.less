@@ -17,12 +17,15 @@
     }
     nav {
         .flex();
+        flex-flow: row nowrap;
         a {
             text-decoration: none;
             color: @nav-font;
-            font-size: 2rem;
+            font-size: 1.75rem;
             margin: 0 1.3rem;
-            
+            @media @phone {
+                margin: 0 1rem;
+            }
         }
     }
 }
