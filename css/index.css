@@ -292,6 +292,7 @@ footer {
     align-items: center;
     width: 100%;
     padding: 15px;
+    margin: 0;
   }
   .home .walk .walk-text {
     width: 100%;
@@ -300,6 +301,7 @@ footer {
     width: 100%;
   }
   .home .walk .walk-img {
-    width: 100px;
+    width: 100%;
+    margin: 0 0 8% 0;
   }
 }
