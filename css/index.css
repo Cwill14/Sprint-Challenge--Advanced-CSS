@@ -163,7 +163,7 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-.nav-container {
+#nav-container {
   position: fixed;
   z-index: 2;
   width: 100%;
@@ -174,31 +174,28 @@ p {
   padding: 1rem;
   color: #454A59;
   background-color: #F6F6F6;
-  opacity: 0.75;
-}
-.nav-container:hover {
   opacity: 1;
 }
-.nav-container h1 {
+#nav-container h1 {
   font-size: 4rem;
   margin: 1rem 0;
 }
-.nav-container nav {
+#nav-container nav {
   display: flex;
   flex-flow: row nowrap;
 }
-.nav-container nav a {
+#nav-container nav a {
   text-decoration: none;
   color: #454A59;
   font-size: 1.75rem;
   margin: 0 1.3rem;
 }
-.nav-container nav a:hover {
+#nav-container nav a:hover {
   transform: scale(1.15);
   color: #81848E;
 }
 @media (max-width: 500px) {
-  .nav-container nav a {
+  #nav-container nav a {
     margin: 0 1rem;
   }
 }
